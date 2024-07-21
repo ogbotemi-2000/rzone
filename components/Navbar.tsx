@@ -1,11 +1,10 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
-import {motion} from 'framer-motion';
 import Button from "./Button";
 import { useState } from "react"
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-
+import {FlipLink} from  './animations/flipLink';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -24,19 +23,19 @@ const Navbar = () => {
           height={70}
           className="cursor pointer"
         />
-
-
       
       </Link>
     <div className="py-8 text-white hidden sm:flex">
     <ul className="hidden sm:flex">
       <Link href="/#">
-      <li className="ml-10 hover:border-b-2 hover:text-blue-200 uppercase text-base">Home</li>
+      <li className="ml-10 hover:border-b-2 hover:text-blue-200 uppercase text-base">
+        <FlipLink>Home</FlipLink>
+      </li>
       </Link>
 
       <Link href="/About_Us">
       <li className="ml-10 hover:border-b-2 uppercase text-base">About Us</li>
-      </Link>
+        </Link>
 
       <Link href="/Tracking">
       <li className="ml-10 hover:border-b-2 uppercase text-base">Tracking</li>
