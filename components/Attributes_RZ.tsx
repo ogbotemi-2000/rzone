@@ -2,6 +2,8 @@ import Image from 'next/image'
 import React, { Fragment } from 'react'
 import Link from 'next/link'
 
+import { Opaque } from './animations/opaque';
+
 const Attributes_RZ = () => {
   return (
     <section className="flexCenter flex-col">
@@ -19,10 +21,12 @@ const Attributes_RZ = () => {
             <div className="flex-1 w-auto md items-center mx-auto">
                 <div className="grid grid-cols-1 mt-0 ">
                     <div>
+                      <Opaque>
                         <Image src ="/nature.jpg"
                             alt="Delivery"
                             width={700}
                             height={650}/>
+                      </Opaque>
                     </div>
 
                     <div className="box-border h-50 w-auto p-4 border-2 gap-4">
@@ -36,10 +40,12 @@ const Attributes_RZ = () => {
             </div>
             <div className="flex-1 w-auto  mx-auto">
             <div className='grid grid-cols-1 mt-0 '>
-            <Image src ="/digitilization.jpg"
-                            alt="Delivery"
-                            width={700}
-                            height={600}/>
+            <Opaque>
+              <Image src ="/digitilization.jpg"
+                alt="Delivery"
+                width={700}
+                height={600}/>
+            </Opaque>
             </div>
             <div className="box-border h-50 w-auto p-4 border-2 gap-4">
                     <Link href="/" className="mb-10">
@@ -50,10 +56,12 @@ const Attributes_RZ = () => {
 </div>
             <div className="flex-1 w-auto mx-auto ">
                 <div className='grid grid-cols-1 mt-0'>
+             <Opaque>
             <Image src ="/worldwide.jpg"
-                            alt="Delivery"
-                            width={700}
-                            height={600}/>
+              alt="Delivery"
+              width={700}
+              height={600}/>
+            </Opaque>     
             </div>
             <div className="box-border h-50 w-auto p-4 border-2 gap-4">
                     <Link href="/" className="mb-10">

@@ -1,7 +1,9 @@
-import React from 'react';
-let {motion} = require('framer-motion');
+'use client';
 
-const duration = 0.25, stagger = 0.034 h5;
+import React from 'react';
+import {motion} from 'framer-motion';
+
+const duration = 0.4, stagger = 0.035;
 
 export const FlipLink = ({children}: {
   children: string
@@ -11,17 +13,16 @@ export const FlipLink = ({children}: {
     className='relative overflow-hidden whitespace-pre'>
       <div>
         {children.split('').map((e, i)=>{
-         console.log('::I::', i);
-         return <motion.span className='inline-block' variants={{initial: {y: 0}, hovered: {y: '-100%'}}}
-         transition={{duration, ease:'easeOut'}} style={{transitionDelay: (stagger*i)+'s'}}>
+         return <motion.span key={'span'+i+i} className='inline-block' variants={{initial: {y: 0}, hovered: {y: '-100%'}}}
+         transition={{duration, ease:'easeOut'}} style={{transitionDelay: (stagger*i*0.2)+'s'}}>
           {e}
         </motion.span>})
         }
       </div>
       <div className='absolute top-0'>
         {children.split('').map((e, i)=>{
-          return <motion.span className='inline-block' variants={{initial: {y: '100%'}, hovered: {y: 0}}}
-         transition={{duration, ease:'easeOut'}} style={{transitionDelay: (stagger*i)+'s'}}>
+          return <motion.span key={'span'+i+1} className='inline-block' variants={{initial: {y: '100%'}, hovered: {y: 0}}}
+         transition={{duration, ease:'easeOut'}} style={{transitionDelay: (stagger*i*0.2)+'s'}}>
           {e}
         </motion.span>})
         }

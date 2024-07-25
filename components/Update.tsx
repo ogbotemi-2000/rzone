@@ -3,6 +3,8 @@ import { FEATURES } from '@/constants'
 import React from 'react'
 import Navbar from './Navbar'
 
+import {TextIn} from './animations/textIn'
+
 const Update = () => {
   return (
     <section className="flexCenter flex-col transition-all bg-gradient-to-b from-blue-600 to-blue-400">
@@ -21,8 +23,12 @@ const Update = () => {
       <img className="h-10 w-10 rounded-full" src="/door.png" alt="" />
       <div className="ml-3 overflow-hidden">
         <h2 className="font-medium text-white hover:text-blue-300">Door to Door Sevices</h2>
-        <p className="text-sm text-slate-200 text-justify">We offer reliable door-to-door services, ensuring your shipments are picked up and delivered directly to your desired location. With our dedicated team and advanced tracking systems, we provide seamless, 
-        hassle-free logistics solutions, making shipping easy and efficient for businesses of all sizes.</p>
+        <div className="text-sm text-slate-200 text-justify">
+          <TextIn>
+          We offer reliable door-to-door services, ensuring your shipments are picked up and delivered directly to your desired location. With our dedicated team and advanced tracking systems, we provide seamless, 
+          hassle-free logistics solutions, making shipping easy and efficient for businesses of all sizes.
+          </TextIn>
+        </div>
       </div>
     </li>
 </div>
@@ -34,8 +40,12 @@ const Update = () => {
       <img className="h-10 w-10 rounded-full" src="/air.png" alt="" />
       <div className="ml-3 overflow-hidden">
         <h2 className="font-medium text-white hover:text-blue-300">Air Freight Sevices</h2>
-        <p className="text-sm text-slate-200 text-justify">Our air freight services ensure swift, reliable delivery for your time-sensitive shipments. Leveraging global networks and advanced tracking, we provide efficient, cost-effective solutions for businesses of all sizes.
-         Trust us for secure, on-time air transport, making your logistics seamless and stress-free.</p>
+        <div className="text-sm text-slate-200 text-justify">
+        <TextIn>
+        Our air freight services ensure swift, reliable delivery for your time-sensitive shipments. Leveraging global networks and advanced tracking, we provide efficient, cost-effective solutions for businesses of all sizes.
+        Trust us for secure, on-time air transport, making your logistics seamless and stress-free.
+        </TextIn>  
+         </div>
       </div>
     </li>
 </div>
@@ -47,8 +57,12 @@ const Update = () => {
       <img className="h-10 w-10 rounded-full" src="/freight.png" alt="" />
       <div className="ml-3 overflow-hidden">
         <h2 className="font-medium text-white hover:text-blue-300">Sea Freight Sevices</h2>
-        <p className="text-sm text-slate-200 text-justify">Our Sea Freight Services offer reliable, cost-effective shipping solutions for your global needs. With extensive industry expertise, we ensure secure, timely deliveries and handle all logistics, from documentation to customs clearance. Trust u
-        s to navigate your cargo smoothly across oceans, making international shipping stress-free and efficient.</p>
+        <div className="text-sm text-slate-200 text-justify">
+        <TextIn>
+        Our Sea Freight Services offer reliable, cost-effective shipping solutions for your global needs. With extensive industry expertise, we ensure secure, timely deliveries and handle all logistics, from documentation to customs clearance. Trust us
+        to navigate your cargo smoothly across oceans, making international shipping stress-free and efficient.
+        </TextIn>
+        </div>
       </div>
     </li>
 
@@ -66,8 +80,12 @@ const Update = () => {
   <img className="h-10 w-10 rounded-full" src="/person-1.png" alt="" />
   <div className="ml-3 overflow-hidden">
     <h2 className="font-medium text-white hover:text-blue-300">Supply Chain Optimization</h2>
-    <p className="text-sm text-slate-200 text-justify">R-Zone Cargo optimizes supply chains with advanced 
-    technology, ensuring efficiency, cost-effectiveness, and timely deliveries globally.</p>
+    <div className="text-sm text-slate-200 text-justify">
+    <TextIn>
+    R-Zone Cargo optimizes supply chains with advanced 
+    technology, ensuring efficiency, cost-effectiveness, and timely deliveries globally.
+    </TextIn>
+    </div>
   </div>
 </li>
 </div>
@@ -80,8 +98,12 @@ const Update = () => {
       <img className="h-10 w-10 rounded-full" src="/person-1.png" alt="" />
       <div className="ml-3 overflow-hidden">
         <h2 className="font-medium text-white hover:text-blue-300">Advanced Warehousing Sevices</h2>
-        <p className="text-sm text-slate-200 text-justify">R-Zone Cargo provides advanced 
-        warehousing with cutting-edge technology, ensuring secure, efficient, and organized storage solutions.</p>
+        <div className="text-sm text-slate-200 text-justify">
+        <TextIn>
+        R-Zone Cargo provides advanced 
+        warehousing with cutting-edge technology, ensuring secure, efficient, and organized storage solutions.
+        </TextIn>
+        </div>
       </div>
     </li>
 </div>

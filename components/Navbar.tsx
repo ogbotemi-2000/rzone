@@ -4,7 +4,7 @@ import Link from "next/link";
 import Button from "./Button";
 import { useState } from "react"
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import {FlipLink} from  './animations/flipLink';
+import {FlipLink} from  './animations/flipLInk';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)

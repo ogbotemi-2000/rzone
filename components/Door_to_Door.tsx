@@ -2,12 +2,16 @@ import Image from 'next/image'
 import { FEATURES } from '@/constants'
 import React from 'react'
 import Navbar from './Navbar'
+import {FadeIn} from './animations/scroll';
 
 const Door_to_Door = () => {
   return (
     <section className="flexCenter flex-col transition-all">
       <div className="padding-container max-container w-full pt-4 mt-20">
-        <h1 className='text-slate-950 bold-40 lg:bold-10 xl:max-w-[600px]'>About Us</h1>
+        
+        <h1 className='text-slate-950 bold-40 lg:bold-10 xl:max-w-[600px]'>
+          About Us
+        </h1>
 
         <p className="uppercase regular-18 -mt-1 mb-3 text-slate-950">
           We are BEYOND BORDERS
@@ -37,11 +41,14 @@ R-Zone Enterprises was founded in 2012. We specialise in the shipment of all typ
 
     </div>
     <div className='item-center justify-center'>
-                        <Image src ="/cargo.jpg"
-                            alt="Delivery"
-                            width={700}
-                            height={500}/>
-                    </div>
+      <FadeIn>
+        <Image src ="/cargo.jpg"
+            alt="Delivery"
+            width={700}
+            height={500}/>
+        
+      </FadeIn>
+    </div>
       </div>
        
     </section>
